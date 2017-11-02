@@ -1,13 +1,12 @@
 # TODO: SimpleCov required here...
-
+require 'simplecov'
+SimpleCov.start 'rails'
 
 
 ENV["RAILS_ENV"] ||= "test"
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 require 'contexts'
-require 'simple_cov'
-SimpleCov.start 'rails'
 
 
 class ActiveSupport::TestCase
